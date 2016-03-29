@@ -71,6 +71,9 @@ Installation
     ./venv.sh
     export PATH=./venv/bin:$PATH
 
+`sudo` is optional.  If run as a regular user, `boostrap.sh` prints the
+commands for you to run as root.
+
 Help
 ----
 
