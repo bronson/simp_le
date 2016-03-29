@@ -1,4 +1,4 @@
-#!/bin/sh -xe
+#!/bin/bash -xe
 
 # keep in sync with .travis.yml
 bootstrap_deb () {
