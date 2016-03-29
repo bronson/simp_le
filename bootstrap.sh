@@ -39,4 +39,6 @@ then
 elif [ -f /etc/redhat-release ]
 then
   bootstrap_rpm
+else
+  echo "Don't know how to bootstrap your platform."
 fi
