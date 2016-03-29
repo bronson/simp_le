@@ -68,8 +68,7 @@ Installation
 .. code:: shell
 
     sudo ./bootstrap.sh
-    ./venv.sh
-    export PATH=./venv/bin:$PATH
+    . venv.sh
 
 Help
 ----
