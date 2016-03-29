@@ -1,4 +1,4 @@
-#!/bin/sh -xe
+#!/bin/sh -e
 
 run () {
   if [[ $EUID -ne 0 ]]; then
