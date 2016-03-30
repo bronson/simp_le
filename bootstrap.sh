@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 run () {
-  if [[ $EUID -ne 0 ]]; then
+  if [ "$(id -u)" -ne 0 ]; then
     if [ -z "$run_has_warned" ]; then
       echo 'Run these commands as root:'
       run_has_warned=1
@@ -10,7 +10,7 @@ run () {
 
   echo "$@"
 
-  if [[ $EUID -eq 0 ]]; then
+  if [ "$(id -u)" -eq 0 ]; then
     "$@"
   fi
 }
